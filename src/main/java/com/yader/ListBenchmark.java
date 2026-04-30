@@ -14,7 +14,7 @@ import java.util.Random;
  * результаты сравнения {@code ArrayList} и {@code LinkedList} строятся
  * на одной и той же последовательности индексов.
  */
-public class listBenchmark {
+public class ListBenchmark {
 
     /** Коллекция, над которой проводятся замеры. */
     private final List<Integer> targetList;
@@ -33,7 +33,7 @@ public class listBenchmark {
      * @param operationCount количество операций в одном замере; должно быть положительным
      * @throws IllegalArgumentException если {@code operationCount} не положителен
      */
-    public listBenchmark(List<Integer> targetList, int operationCount) {
+    public ListBenchmark(List<Integer> targetList, int operationCount) {
         if (operationCount <= 0) {
             throw new IllegalArgumentException("operationCount must be positive");
         }
